@@ -4,12 +4,12 @@ local M = {}
 local config = {
   time_window = 100, -- Time window in milliseconds for key press detection
   map_insert = {
-    jk = '<BS><ESC>',
-    kj = '<BS><ESC>',
+    jk = '<ESC>',
+    kj = '<ESC>',
   },
   map_term = {
-    jk = '<BS><C-\\><C-n>',
-    kj = '<BS><Up><CR>',
+    jk = '<C-\\><C-n>',
+    kj = '<Up><CR>',
   },
 }
 
@@ -25,7 +25,7 @@ function M.handle_key_press(key)
     end
 
     if action ~= "" then
-      vim.fn.feedkeys(vim.api.nvim_replace_termcodes(action, true, true, true), "t")
+      vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<BR>" .. action, true, true, true), "t")
       return ""
     end
   end
