@@ -9,18 +9,17 @@ Use at your own risk.
 {"anflar/jkescape", config=true}
 ```
 
-# Configuration
+# Configuration default
 ```lua
--- Default options:
-require('jkescape').setup({
-  time_window = 150, -- Adjust the time window as needed
+{"anflar/jkescape", config=true, opts = {
+  time_window = 150, -- ms 
   map_insert = {
-    jk = '<BS><ESC>',
-    kj = '<BS><ESC>',
+    jk = '<ESC>',
+    kj = '<ESC>',
   },
   map_term = {
-    jk = '<BS><C-\\><C-n>',
-    kj = '<BS><Up><CR>',
+    jk = '<C-\\><C-n>',
+    kj = '<Up><CR>',
   },
-})
+}},
 ```
