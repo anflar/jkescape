@@ -12,5 +12,4 @@ jk_escape.setup = function()
   vim.api.nvim_set_keymap('i', 'k', "v:lua.require'jk_escape'.handle_key_press('k')", {expr = true, noremap = true, silent = true})
 end
 
-jk_escape.setup()
-
+return jk_escape
