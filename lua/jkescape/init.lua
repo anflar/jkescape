@@ -21,8 +21,8 @@ M.setup = function()
     end,
   })
 
-  vim.api.nvim_set_keymap('i', 'j', "v:lua.require'jk_escape'.handle_key_press('j')", {expr = true, noremap = true, silent = true})
-  vim.api.nvim_set_keymap('i', 'k', "v:lua.require'jk_escape'.handle_key_press('k')", {expr = true, noremap = true, silent = true})
+  vim.api.nvim_set_keymap('i', 'j', "v:lua.require'jkescape'.handle_key_press('j')", {expr = true, noremap = true, silent = true})
+  vim.api.nvim_set_keymap('i', 'k', "v:lua.require'jkescape'.handle_key_press('k')", {expr = true, noremap = true, silent = true})
 end
 
 
