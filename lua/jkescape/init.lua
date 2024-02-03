@@ -8,8 +8,8 @@ local config = {
     kj = '<BS><ESC>',
   },
   map_term = {
-    jk = '<C-\\><C-n>',
-    kj = '<Up><CR>',
+    jk = '<BS><C-\\><C-n>',
+    kj = '<BS><Up><CR>',
   },
 }
 
