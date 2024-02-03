@@ -25,7 +25,7 @@ function M.handle_key_press(key)
     end
 
     if action ~= "" then
-      vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<BR>" .. action, true, true, true), "t")
+      vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<BS>" .. action, true, true, true), "t")
       return ""
     end
   end
